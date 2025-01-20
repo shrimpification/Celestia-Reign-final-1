@@ -2,43 +2,30 @@
 <html lang="en">
 
     <head>
-        <title>Celestia Reign</title>
+        <title>Tyan Jennie</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Celestia Reign">
+        <meta name="description" content="Tyan Jennie">
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        </head>
+
+        
 
 
         <body>
-            
+            <div class="movingText" style="padding-top: 10px;">
+                <div class="moving-text" id="move_text" >TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE TYAN JENNIE</div>
+            </div>
             <div class="wrapper">
         
                 <div class="header">
 
-                    <h1>CELESTIA REIGN</h1>
+                    <h1 id="colorText">JENNIE TYAN</h1>
 
                 </div>
         
                 <div class="nav">
                         <ol>
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="album.html">ABOUT</a></li>
-                            <li><a href="merch.html">COLLECTION</a></li>
-                            <li class="cart">
-                                <div class="block">
-                                <a href="#modal"><img src="img/cart.png" alt="cart" width="65" height="65"></a>
-                                
-                                </div>
-                                
-                            </li>
-                            <li class="cart">
-                                
-                                <div id="modal">
-                                    <img src="img/cart.png" alt="cart" width="65" height="65">
-                                    <p class="cart-text">Your cart is empty</p>
-                                    <a href="#" class="closeButton">Close</a>
-                                </div>
-                            </li>
+                            
                         </ol>   
                         
                 </div>
@@ -47,58 +34,45 @@
                 <div class="main">
 
                         <section class="header-grid">
+
+                            <label for="nameInput" style="font-family: Handjet; font-size: 20px ;"> Enter your name:</label>
+                            <input type="text" id="nameInput" placeholder="Your name"> 
+                            <button onclick="greet()" style="margin-bottom: 30px;">Greet</button>
+
+                            <p id="greetingMessage" style="font-family: Handjet; font-size: 40px ;"></p>
                             <div class="header-text">
-                                <h1>Who are we?</h1>
-                                <p>Celestia Reign is a South Korean girl group formed by Stellar Sound Entertainment. The group is composed of four members: Sora, Ryuu, Luna and Kai. 
-                                    Their debut album, "Watercolor skies" introduces a unique sound that’s garnering attention both in Asia and internationally.</p>
-                                <p>Celestia Reign is a K-pop/J-pop fusion band that promotes a unique blend of genres, including pop, R&B and electronic elements. Their product offerings include physical albums, exclusive digital content, concert tickets, 
-                                    VIP packages, digital fan clubs with early access to merchandise, pre-releases, and interactive experiences.</p>
-    
-                       
+
+                                <hr>
+
+                                <h1>Who am i?</h1>
+                                <button onclick="showText()">Learn More</button>
+                                <p id="text">Hi! My name is Jennie, and I am a student at Humber College in the Multimedia Design and Development program. Here, you can view my portfolio, which consists of my digital art, 3D models, and some experimental pieces I’ve created over time. If, while browsing, you become interested in commissioning your own personalized art piece from me, you can also find all my contact information.</p>
                             </div>
-                            <img src="img/star.jpg" class="img1">
+                            <img src="img/star.jpg" class="img1" id="image">
                         </section>
         
                         <hr>
         
                         <section class="Relative">
-                            <h1>Our Music</h1>
-                            <p>Our debut album, “Celestia Reign” invites you into the world of Eternal. It’s a universe filled with mystery, anticipation, and the thrill of discovery. Each track is a story—a celestial tale of wonder, longing, and adventure. With a mix of soaring vocals, hypnotic instrumentals,
-                         and dynamic production, the album captures the essence of what it means to reach for the stars.</p>
+                            <h1>My Art</h1>
+                            <img src="img/333.gif" class="img111">
+                            <img src="img/222.jpg" class="img8" height="800" width="600">
                         </section>
-        
-                        <hr>
-        
-                        <section id="Absolute">
-                        <h1>A Visual Odyssey</h1>
-                        <p>Our visuals are as important as the music we create. Inspired by space, myth, and fantasy, the imagery of Celestial Reign transports you to new worlds, reflecting the infinite possibilities we seek to express. 
-                            From our music videos to our live performances, every visual element is carefully crafted to reflect the cosmic nature of our sound.</p>
-                         </section>
-        
-                        <hr>
-        
-                             <main class="main1">
-        
-                                <img src="img/heart.png" alt="heart" class="img2" height="450" width="80">
-                                    
-                                <section>
-                                    <h1>Join the Reign</h1>
-                                    <p> The Celestial Reign fanbase—known as the "Starchild Tribe"—is a global community of passionate, forward-thinking fans who share our vision of breaking boundaries and reaching for the stars. 
-                                        Join us and become part of a movement that is reshaping the music world.</p>
 
-                                     <p>Together, we’ll ascend beyond the ordinary and rise into the celestial realms. Celestial Reign is more than music; 
-                                        it’s a universe waiting to be explored.</p>
-            
-                                </section>  
+                        <section class="Relative">
+                            <img src="img/666.png" class="img11" height="800" width="600">
+                            <img src="img/555.jpg" class="img8" height="1000" width="600">
+                        </section>
+    
                       </main>
                 </div>
-        </body>
+                </div>
         
         
         <footer>
 
             <div class="container">
-                <h2>Follow our updates</h2>
+                <h2>Comission me!</h2>
                 <form action="action_page.php">
 
                   <label for="fname">Name</label>
@@ -107,17 +81,15 @@
                   <label for="lname">Email</label>
                   <input type="text" id="lname" name="lastname" placeholder="Your email.."><br>
 
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Canada</option>
-                    <option value="canada">Australia</option>
-                    <option value="usa">USA</option>
-                    <option value="Russia">Russia</option>
-                    <option value="Kazakhstan">Kazakhstan</option>
+                  <label for="order">Comission</label>
+                  <select id="order" name="order">
+                    <option value="3d">Low poly 3D model</option>
+                    <option value="2d">2D art</option>
+                    <option value="animation">Animation</option>
                   </select><br>
 
 
-                    <label for="subject">Subject</label><br>
+                    <label for="details">Details</label><br>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; "></textarea>
 
                   <br>
@@ -154,18 +126,84 @@
             
             <div class="row">
             <ul>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact me</a></li>
             </ul>
             </div>
             
-            <div class="row">
-            © 2024 Stellar Sound Entertainment 
-            </div>
             </div>
             </footer>
 
+        <script>
+            function showAlert() {
+                alert ("Hello!");
+            }
+            showAlert();
+            function showText() {
+                 var text = document.getElementById("text");
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            }
+
+
+            const pic = document.getElementById("image");
+
+            pic.addEventListener("mouseover", function() {
+                pic.src = "img/heart.png";
+            });
+
+            pic.addEventListener("mouseout", function() {
+                pic.src = "img/star.jpg"; 
+            });
+
+            function greet() {
+                const name = document.getElementById("nameInput").value; 
+                const greeting = `Greetings, ${name}!`; 
+                document.getElementById("greetingMessage").textContent = greeting; 
+            }
+
+
+
+            const text = document.getElementById('move_text');
+            let position = 0; 
+            const screenWidth = window.innerWidth; 
+            const textWidth = text.offsetWidth; 
+
+            function move() {
+            if (position > screenWidth) {
+                position = -textWidth; 
+            }
+            position += 2; 
+            text.style.left = position + 'px'; 
+            requestAnimationFrame(move);
+            }
+
+            move();
+
+
+
+            const textElement = document.getElementById('colorText');
+
+            let isBlue = true;
+
+            function changeColor() {
+                if (isBlue) {
+                    textElement.style.color = 'black'; 
+                } else {
+                    textElement.style.color = '#1238FF'; 
+                }
+                isBlue = !isBlue;
+            }
+
+            setInterval(changeColor, 30000);
+
+            changeColor();
+        </script>
+    
+            </head>
+        </body>
+
         </html>
-        
+     
